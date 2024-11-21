@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="dados.html" method="get"></form>
+    <!-- <label for="campo1">Digite um numero</label> -->
+    <input type="number" id="campo1" placeholder="digite um numero">
+    <br>
+    <!-- <label for="campo2">Digite outro numero</label> -->
+    <input type="number" id="campo2" placeholder="DIgite outro numero">
+    <input type="number" id="campo3" placeholder="Resultado" readonly>
+    <!-- <textarea name="" id="cmapo1" rows="4" cols="20" placeholder="Digite sua mensagem"></textarea> -->
+     <input type="submit">
+</form>
+     <hr>
+    <button onclick="javascript:teste()">clique aqui</button>
+    
+</body>
+<script>
+    function campo1(){
+        const campo1 =document.getElementById("campo1")
+        }
+        const campo2 =document.getElementById("campo2")
+        const campo3 =document.getElementById("campo3")
+        campo3.value = parseInt(campo1.value)+ parseInt(campo2.value)
+        console.log(campo2.value)
+    </script>
+
+
+</html>
